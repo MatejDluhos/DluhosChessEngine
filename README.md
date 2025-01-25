@@ -1,88 +1,99 @@
-######################################################################################################
-                                                 EN
-######################################################################################################
+# EN
 
-                                         Installation guide:
+## Installation Guide
 
-1) Install the Arena GUI from playwitharena.de
+1. Install the Arena GUI from [playwitharena.de](https://playwitharena.de).
 
-2) Build the program - in terminal navigate into the folder 'engine' and type 'dotnet publish'
+2. Build the program:
+   - Open the terminal and navigate to the `engine` folder.
+   - Run the command: `dotnet publish`.
 
-3) Install the engine in the GUI (Engine -> Install new engine -> select the .exe file of the engine).
-   The executable should be found in engine/bin/Debug/net7.0 and is called Thesis.
+3. Install the engine in the GUI:
+   - Navigate to `Engine -> Install new engine`.
+   - Select the `.exe` file of the engine. The executable can be found in `engine/bin/Debug/net7.0` and is named `Thesis`.
 
-4) The engine should automatically load. If not, load it (Engines -> Load engine -> Thesis).
+4. The engine should load automatically. If not:
+   - Navigate to `Engines -> Load engine` and select `Thesis`.
 
-######################################################################################################
+---
 
-                                            User guide:
+## User Guide
 
-1) Load a position (Position -> Set-up a position -> Load -> input FEN string).
-   For convenience I included a file with FEN strings, which should test
-   the entire functionality of the engine.
+1. **Load a Position**:
+   - Navigate to `Position -> Set-up a position -> Load`.
+   - Input a FEN string. For convenience, a file with FEN strings is included to test the engine's functionality.
 
-2) The engine will start computing when the first move is made. After a little while
-   a message will appear in the lower panel, containing either a series of possible 
-   paths leading to a mate-in-3 or a notification about no paths being found.
-   If the first move was incorrect, it will also state that.
+2. **Start Computing**:
+   - The engine begins computing after the first move.
+   - A message will appear in the lower panel with either:
+     - A series of possible paths leading to a mate-in-3, or
+     - A notification indicating no paths were found.
+   - If the first move was incorrect, the engine will notify you.
 
-3) Play out the position with or without the help of the hint in the lower panel.
-   If you make a wrong move or just want to explore a different path, you can use
-   the move navigation arrows for going back and choosing another move. When choosing
-   different moves, I recommend selecting the overwrite option.
+3. **Explore the Position**:
+   - Play the position with or without using the hint in the lower panel.
+   - If a wrong move is made, or you want to explore another path, use the navigation arrows to go back and select another move.
+   - When changing moves, it is recommended to select the overwrite option.
 
-4) After playing through the mate-in-3 sequence you can find the aesthetics evaluation
-   in the eval.txt file generated in the same folder the executable is in.
+4. **Evaluation Output**:
+   - After completing the mate-in-3 sequence, you can find the aesthetics evaluation in the `eval.txt` file, located in the same folder as the executable.
 
-5) If only 1 path exists in the position provided, the evaluation will contain a summary
-   table of interesting themes present in the sequence, followed by a detailed analysis
-   of every move in the sequence.
+5. **Evaluation Details**:
+   - If only one path exists, the evaluation includes:
+     - A summary table of interesting themes in the sequence.
+     - A detailed analysis of each move in the sequence.
+   - If multiple paths exist, the evaluation starts with:
+     - A table of average aesthetic scores across all paths.
+     - A detailed analysis of the main path chosen by the engine.
 
-6) If multiple paths exist, the file will start with a table of average aesthetic score
-   across all paths, and following it will be an analysis of the main path chosen by the engine.
+---
 
-######################################################################################################
-                                                 CZ
-######################################################################################################
+# CZ
 
-                                         Návod k instalaci:
+## Návod k instalaci
 
-1) Nainstalujte Arena GUI ze stránky playwitharena.de
+1. Nainstalujte Arena GUI ze stránky [playwitharena.de](https://playwitharena.de).
 
-2) Zkompilujte program - v terminálu se přesuňte do složky 'engine' a napište 'dotnet publish'
+2. Zkompilujte program:
+   - Otevřete terminál a přesuňte se do složky `engine`.
+   - Zadejte příkaz: `dotnet publish`.
 
-3) Nainstalujte engine v GUI (Engine -> Install new engine -> vyberte .exe soubor enginu).
-   Soubor by se měl nacházet v engine/bin/Debug/net7.0 a nazývá se Thesis.
+3. Nainstalujte engine v GUI:
+   - Navigujte do `Engine -> Install new engine`.
+   - Vyberte `.exe` soubor enginu. Soubor se nachází v `engine/bin/Debug/net7.0` a jmenuje se `Thesis`.
 
-4) Engine by se měl načíst automaticky. Pokud ne, načtěte ho. (Engines -> Load engine -> vyberte engine)
+4. Engine by se měl načíst automaticky. Pokud ne:
+   - Navigujte do `Engines -> Load engine` a vyberte engine.
 
-######################################################################################################
+---
 
-                                        Uživatelská příručka:
+## Uživatelská příručka
 
-1) Načtěte pozici (Position -> Set-up a position -> Load -> vložte FEN string).
-   Pro příhodnost jsem v projektu zahrnul soubor s FEN stringy, které by měly
-   testovat celou funkcionalitu enginu.
+1. **Načtení pozice**:
+   - Navigujte do `Position -> Set-up a position -> Load`.
+   - Vložte FEN string. Pro pohodlí je přiložen soubor s FEN stringy k testování funkcionality enginu.
 
-2) Engine začne pracovat po uskutečnění prvního tahu. Po malé prodlevě se v dolním 
-   panelu objeví zpráva obsahující všechny možné cesty vedoucí k matu ve třech tazích,
-   nebo oznámení popisující to, že žádná cesta nebyla nalezena. Pokud byl první tah
-   nekorektní, vypíše se zde oznámení i o tomto.
+2. **Spuštění výpočtu**:
+   - Engine začne počítat po provedení prvního tahu.
+   - Ve spodním panelu se objeví zpráva obsahující:
+     - Všechny možné cesty vedoucí k matu ve třech tazích, nebo
+     - Oznámení, že žádná cesta nebyla nalezena.
+   - Pokud byl první tah nesprávný, zobrazí se upozornění.
 
-3) Pokračujte v hraní pozice, ať už bez nebo s dopomocí nápovědy v dolní panelu.
-   Pokud uděláte špatný tah nebo jen chcete prozkoumat jinou cestu, můžete využít
-   navigačních šipek pro vracení se v sekvenci a zvolení jiného tahu. Při vracení se
-   a volení jiného tahu je doporučeno používat možnost 'overwrite'.
+3. **Prozkoumání pozice**:
+   - Hrajte pozici s pomocí nebo bez nápovědy ve spodním panelu.
+   - Pokud uděláte chybný tah nebo chcete zkusit jinou cestu, použijte navigační šipky k návratu a zvolení jiného tahu.
+   - Při změně tahu doporučujeme vybrat možnost přepsání (`overwrite`).
 
-4) Po dohrání sekvence můžete najít kompletní zhodnocení atraktivity zadané pozice
-   v souboru eval.txt, který je generován ve stejné složce, kde se nachází .exe soubor.
+4. **Výstup hodnocení**:
+   - Po dokončení sekvence mate-in-3 najdete hodnocení v souboru `eval.txt`, který je generován ve stejné složce jako spustitelný soubor.
 
-5) Pokud v zadané pozici existuje pouze 1 cesta k matu ve 3 tazích, evaluace bude obsahovat
-   tabulku zajímavých taktik a témat přítomných v dané cestě, následovat bude podrobná analýza
-   každého tahu cesty.
+5. **Podrobnosti hodnocení**:
+   - Pokud existuje pouze jedna cesta, hodnocení obsahuje:
+     - Tabulku zajímavých témat v sekvenci.
+     - Detailní analýzu jednotlivých tahů sekvence.
+   - Pokud existuje více cest, hodnocení obsahuje:
+     - Tabulku průměrných estetických skóre pro všechny cesty.
+     - Analýzu hlavní cesty zvolené enginem.
 
-6) Pokud existuje více cest, soubor bude začínat tabulkou průměrného hodnocení atraktivity
-   ze všech možných cest, náseldovat bude analýza hlavní cesty zvolené enginem ve stejném
-   formátu, který je popsán v bodě 5).
-
-#######################################################################################################
+---
