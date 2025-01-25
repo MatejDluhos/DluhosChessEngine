@@ -1,0 +1,31 @@
+EXAMPLE FEN STRINGS FOR TESTING PURPOSES
+
+MATES IN 3:								Interesting theme:
+
+r1b2rk1/pp3Npp/8/2p5/3Pp1P1/1Q6/PP4KP/8 w - - 0 1			Smothered mate
+r1bq3k/ppp2r1p/2np1p1Q/2bNpp2/2B1P2N/3P4/PPP2PPP/R3K2R w - - 0 1	Discovered attack
+r1b5/pp4kp/6p1/3p2Nq/3P4/Q5P1/PPP3P1/4R1K1 w - - 0 1			
+5r1k/2r2P2/3qbRPp/1p1n4/p2pB3/4p1NP/PP6/6RK w - - 0 1			
+r2q1r1k/1b4n1/p3p1nN/1p1p4/2p5/1P1BP2R/PBPP2PP/5RK1 w - - 0 1		
+6K1/3r3r/5kn1/5p2/5P2/6N1/8/4R1R1 w - - 0 1				
+rn1q2rk/pp3p1p/2p4Q/3p4/7P/2NP2R1/PPP3P1/4RK2 w - - 0 1			Sacrifice, Double XRay
+5r2/2R2P1k/7p/4q3/7K/8/6Q1/8 w - - 0 1					Underpromotion
+2k4r/ppp3p1/3p2q1/3P4/2P1p3/1P6/P3QbNB/R4R1K b - - 0 1
+rnb1k1nr/ppp3pp/6q1/4p1B1/1b3P2/2N2N2/PPP3PP/3RKB1R w - - 0 1		Indirect Pins / Skewers
+rn1q1r2/p4pk1/1p3R1p/2ppP2Q/3P4/2P4P/P1P3P1/1R4K1 w - - 0 1
+r1b1n2r/1q1nNpbk/1p1p2p1/p2NpPPp/2P1P2P/3BB3/PP6/R2QK2R w - - 0 1	Queen sacrifice
+r7/pb6/1p2r1Pk/3pNp2/2pP1P2/2q1P1R1/P3QKP1/8 w - - 0 1
+r1bq1rk1/pp2np1p/2n2Bp1/3pp3/3R3Q/2P5/P1P2PPP/2K2BNR w - - 0 1		Queen sacrifice
+2k4r/ppp3p1/3p2q1/3P4/2P1p3/1P6/P3QbNB/R4R1K b - - 0 1
+2r4k/5rp1/pb3p1p/npqP1P2/2p1B1RQ/7R/PB4PP/7K w - - 0 1
+
+
+
+NOT MATES IN 3:
+
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1		Starting position
+r1bqk2r/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 b kq - 0 1
+rnbqk2r/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq - 0 1
+rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 0 1
+r1bqk1nr/pppp1ppp/2n5/2b1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R b KQkq - 0 1
+rn1qkb1r/ppp1ppp1/5n2/3p1b1p/8/BP2PN2/P1PP1PPP/RN1QKB1R w KQkq - 0 5
